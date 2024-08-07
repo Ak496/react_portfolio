@@ -1,0 +1,30 @@
+#header-section {
+    position: fixed;
+    right: 5%;
+}
+
+#nav-link-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-link-list li {
+    width: 10vw;
+}
+
+#nav-link-list a {
+    color: #c5a5c9;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+#resume-button {
+    background-color: #5b2473;
+    color: #c5a5c9;
+    border-radius: 20px;
+    width:150px;
+}
