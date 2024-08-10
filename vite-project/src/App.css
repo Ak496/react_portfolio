@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #b37dba white;
+}
+
 body {
   background-color: #1c1c1c;
   margin: 0;

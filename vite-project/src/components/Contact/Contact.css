@@ -1,3 +1,95 @@
-#contact{
-    text-align: center;
+#contact-sections {
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-details-section {
+    padding: 20px;
+}
+
+#contact-form-section {
+    padding: 40px;
+}
+
+#contact-form-heading,
+#email-section h4,
+#phone-section h4,
+#location-section h4 {
+    color: #c5a5c9;
+}
+
+#email-section,
+#phone-section,
+#location-section {
+    margin: 25px 0px 25px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #email-section:hover,
+#phone-section:hover,
+#location-section :hover {
+    font-size: larger;
+} */
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#contact-form-heading {
+    margin: 0px 10px;
+}
+
+#contact-form #contact-form-inputs {
+    display: flex;
+}
+
+#contact-form #contact-form-inputs input {
+    width: 20rem;
+    height: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 20px 10px;
+    background: none;
+    border-radius: 10px;
+    border-color: #c5a5c9;
+    color: #c5a5c9;
+}
+
+#contact-form #contact-form-inputs input:focus,
+#contact-form textarea:focus {
+    box-shadow: 0 0 10px rgb(252, 6, 252);
+}
+
+#contact-form textarea {
+    width: 41.5rem;
+    height: 10rem;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-color: #c5a5c9;
+    color: #c5a5c9;
+}
+
+#contact-form #form-submit {
+    width: 10rem;
+    background-color: #5b2473;
+    color: #c5a5c9;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 3%;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(111, 2, 111);
+}
+
+#contact-form #form-submit:hover {
+    background-color: #9157ac;
+    border: none;
+    transition: 1s;
 }

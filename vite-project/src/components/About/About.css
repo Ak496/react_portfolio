@@ -1,0 +1,15 @@
+#about-details-section {
+    width: 50%;
+    height: 450px;
+    padding: 70px;
+}
+
+#about-details-section h2 {
+    color: #5b2473;
+}
+
+#about-details-section p {
+    color: #c5a5c9;
+    font-weight: 600;
+    line-height: 2rem;
+}
