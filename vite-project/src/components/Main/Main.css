@@ -22,10 +22,20 @@
 
 #contact-button {
     background-color: #5b2473;
-    color: #c5a5c9;
-    width: 13vw;
     margin-top: 15px;
     border-radius: 50px;
+    box-shadow: 0 0 20px rgb(111, 2, 111);
+}
+
+#contact-button a{
+    color: #c5a5c9;
+    font-weight: bold;
+}
+
+#contact-button:hover{
+    background-color: #9157ac;
+    border: none;
+    transition: 1s;
 }
 
 #main-section-right{

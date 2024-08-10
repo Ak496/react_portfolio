@@ -19,12 +19,12 @@ const Main = () => {
             <Fade duration={2500} delay={1200} direction='down'>
                <p id='text-line4'>3 Years of Experience</p>
             </Fade>
-            <Fade duration={2500} delay={1600} direction='down'>
-               <button id='contact-button'>Contact</button>
+            <Fade duration={2500} delay={1600} direction='up'>
+               <button id='contact-button'><a href='#contact'>CONTACT</a></button>
             </Fade>
          </div>
          <div id='main-section-right'>
-            <Fade duration={2500} direction='up'>
+            <Fade duration={2500} direction='right'>
                <img src={girl} width="600" height="600"/>
             </Fade>
          </div>
