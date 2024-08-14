@@ -25,7 +25,7 @@ const Main = () => {
          </div>
          <div id='main-section-right'>
             <Fade duration={2500} direction='right'>
-               <img src={girl} width="600" height="600"/>
+               <img src={girl} width="600" height="600" alt='A Girl sitting with Laptop'/>
             </Fade>
          </div>
       </div>
