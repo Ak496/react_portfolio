@@ -8,7 +8,7 @@ const Main = () => {
       <div id='home'>
          <div id='main-section-left'>
             <Fade duration={2500} direction='down'>
-               <p id='text-line1'> Hello <img src={hello} width="25" height="25" />, I'm </p>
+               <p id='text-line1'> Hello <img src={hello} width="25" height="25" alt="Hello" />, I'm </p>
             </Fade>
             <Fade duration={1000} delay={600} direction='left'>
                <h1 id='text-line2'>Akila Arunasatesan</h1>
