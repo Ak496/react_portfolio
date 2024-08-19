@@ -6,6 +6,7 @@ import "./Contact.css"
 
 const Contact = () => {
     return (<div id="contact">
+        <h2>CONTACT</h2>
         <div id="contact-sections">
             <div id="contact-details-section">
                 <div id="email-section" >
@@ -22,7 +23,7 @@ const Contact = () => {
                 </div>
             </div>
             <div id="contact-form-section">
-                <h2 id="contact-form-heading">Send Me Your Message</h2>
+                <h3 id="contact-form-heading">Send Me Your Message</h3>
                 <form id="contact-form">
                     <div id="contact-form-inputs">
                         <input type="text" placeholder="Name" required />

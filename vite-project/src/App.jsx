@@ -8,11 +8,11 @@ import About from './components/About/About'
 function App() {
   return (
     <>
-     <Header/>
-     <Main/>
-     <About/>
-     <Contact/>
-     <Footer/>
+      <Header />
+      <Main />
+      <About />
+      <Contact />
+      <Footer />
     </>
   )
 }

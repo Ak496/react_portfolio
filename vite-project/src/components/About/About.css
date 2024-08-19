@@ -1,34 +1,82 @@
 #about {
     display: flex;
-    margin: 30px 0px 20px 0px;
+    flex-direction: column;
+    margin: 0 5%;
 }
 
-#about #about-details-section {
+#about h2 {
+    visibility: hidden;
+    color: #5b2473;
+    font-weight: bolder;
+    letter-spacing: 0.3cm;
+    text-shadow: 0 0 10px rgb(103, 35, 112);
+}
+
+#about-content {
+    display: flex;
+    margin-top: 2%;
+}
+
+#about-content #about-details-section {
     width: 50%;
     height: 450px;
-    padding: 70px;
 }
 
-#about #about-details-section h2 {
+#about-content #about-details-section h3 {
     color: #5b2473;
 }
 
-#about #about-details-section p {
+#about-content #about-details-section p {
     color: #c5a5c9;
     font-weight: 600;
     line-height: 2rem;
 }
 
-#about #about-details-section #skill-img-container {
-    width:25vw;
+#about-content #about-details-section #skill-img-container {
+    width: 25vw;
     display: flex;
     justify-content: space-around;
 }
 
-#about #about-profilePic-section {
-    padding: 70px;
+#about-content #about-details-section img {
+    box-shadow: 0 0 10px rgb(161, 149, 161);
 }
 
-#about #about-profilePic-section img {
+#about-content #about-profilePic-section {
+    width: 400;
+    height: 400;
+    padding: 3% 12% ;
+}
+
+#about-content #about-profilePic-section img {
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgb(161, 149, 161);
+}
+
+/* Media queries */
+@media only screen and  (max-width:650px) { 
+    #about-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0% 5%;
+    }    
+}
+
+@media only screen and (max-width:1024px) {
+    #about h2 {
+        margin-top: 10% ;
+        visibility: visible; 
+        font-size: 5vw;
+        align-self: center;
+    }
+    #about-content #about-profilePic-section {
+        padding: 5% 10% 0%;
+    }
+    #about-content #about-details-section img {
+        max-width: 100%;
+        height: auto;
+    }
 }

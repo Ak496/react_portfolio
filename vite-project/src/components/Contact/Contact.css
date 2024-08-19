@@ -1,14 +1,27 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5% 0%;
+}
+
+#contact h2 {
+    visibility: hidden;
+    color: #5b2473;
+    font-weight: bolder;
+    letter-spacing: 0.3cm;
+    text-shadow: 0 0 10px rgb(103, 35, 112);
+}
+
 #contact-sections {
     display: flex;
-    justify-content: space-around;
 }
 
 #contact-details-section {
-    padding: 20px;
+    margin: 0% 4%;
 }
 
 #contact-form-section {
-    padding: 40px;
+    margin: 2.5% 6% 0%;
 }
 
 #contact-form-heading,
@@ -26,12 +39,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-/* #email-section:hover,
-#phone-section:hover,
-#location-section :hover {
-    font-size: larger;
-} */
 
 #contact-form {
     display: flex;
@@ -86,10 +93,60 @@
     margin: 20px 0px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgb(111, 2, 111);
+    letter-spacing: 0.05cm;
 }
 
 #contact-form #form-submit:hover {
     background-color: #9157ac;
     border: none;
     transition: 1s;
+}
+
+/* Media Queries */
+@media only screen and (max-width:750px) {
+    #contact-details-section h4 {
+        font-size: 2vw;
+    }
+    #email-section,
+    #phone-section,
+    #location-section {
+        margin: 0% 2%;
+    }
+    #contact-form #contact-form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-form #contact-form-inputs input {
+        width: 75vw;
+        height: 8vh;
+        font-size: 3vw;
+    }
+    #contact-form textarea {
+        width: 75vw;
+        height: 20vh;
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #contact {
+        align-items: center;
+        overflow-y: auto;
+    }
+    #contact h2 {
+        margin-top: 10%;
+        visibility: visible;
+        font-size: 5vw;
+    }
+    #contact-sections {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-details-section {
+        display: flex;
+    }
+    #contact-form-section h3 {
+        text-align: center;
+        font-size: 3vw;
+    }
 }
