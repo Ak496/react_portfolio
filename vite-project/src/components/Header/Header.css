@@ -17,6 +17,9 @@
     color: #c5a5c9;
 }
 
+#header-container #header-section #menu-icon{
+    visibility: hidden;
+}
 
 #header-section #nav-link-list {
     display: flex;
@@ -66,13 +69,20 @@
 }
 
 /* Media Queries */
-@media only screen and  (max-width:1024px) {
+@media only screen and  (max-width:1080px) {
+    #header-container #header-section {
+        justify-content: space-between;
+    }
+    #header-container #header-section #menu-icon{
+        visibility: visible;
+        margin-right: 40px;
+    }
     #header-section #nav-link-list {
         display: none;
     }
 }
 
-@media only screen and (min-width:1024px) and (max-width:1200px) {
+@media only screen and (min-width:1080px) and (max-width:1200px) {
     #header-section #nav-link-list {
         left: 30%
     }

@@ -1,0 +1,55 @@
+/* Style the dropdown menu */
+#menu-container {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    background-color: hsla(308, 15%, 50%, 0.314);
+    backdrop-filter: blur(100px);
+    position: absolute;
+    top: 100%;
+    right: 2%;
+}
+
+#menu-container img {
+    position: relative;
+    left:90%;
+}
+
+#menu-container #menu-dropDown li {
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.8cm;
+}
+
+#menu-container #menu-dropDown li a{
+    color: #c5a5c9;
+}
+
+#menu-container #menu-dropDown li a:hover {
+   font-size: larger;
+   text-shadow: #716f71;
+}
+
+#header-section #resume-button {
+    background-color: #5b2473;
+    color: #c5a5c9;
+    border-radius: 20px;
+    width: 7rem;
+    box-shadow: 0 0 20px rgb(111, 2, 111);
+    font-weight: medium;
+    margin-top: 7%;
+}
+
+#header-section #resume-button:hover {
+    background-color: #6a3782;
+    border: none;
+    transition: 1s;
+}
+
+@media only screen and (min-width:1080px) and (max-width:1200px) {
+    #menu-container {
+        display: none;
+    }
+}
