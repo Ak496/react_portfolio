@@ -81,6 +81,12 @@
     border-radius: 10px;
     border-color: #c5a5c9;
     color: #c5a5c9;
+    margin-top: 20px;
+}
+
+#contact-form  h4{
+    color: rgb(155, 37, 37);
+    margin: 0px 10px;
 }
 
 #contact-form #form-submit {
@@ -107,20 +113,24 @@
     #contact-details-section h4 {
         font-size: 2vw;
     }
+
     #email-section,
     #phone-section,
     #location-section {
         margin: 0% 2%;
     }
+
     #contact-form #contact-form-inputs {
         display: flex;
         flex-direction: column;
     }
+
     #contact-form #contact-form-inputs input {
         width: 75vw;
         height: 8vh;
         font-size: 3vw;
     }
+
     #contact-form textarea {
         width: 75vw;
         height: 20vh;
@@ -128,23 +138,27 @@
     }
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1130px) {
     #contact {
         align-items: center;
         overflow-y: auto;
     }
+
     #contact h2 {
         margin-top: 10%;
         visibility: visible;
         font-size: 5vw;
     }
+
     #contact-sections {
         display: flex;
         flex-direction: column;
     }
+
     #contact-details-section {
         display: flex;
     }
+
     #contact-form-section h3 {
         text-align: center;
         font-size: 3vw;
