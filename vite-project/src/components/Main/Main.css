@@ -26,6 +26,8 @@
 
 #contact-button {
     background-color: #5b2473;
+    font-weight: bolder;
+    font-size: large;
     margin-top: 15px;
     border-radius: 50px;
     box-shadow: 0 0 20px rgb(111, 2, 111);
