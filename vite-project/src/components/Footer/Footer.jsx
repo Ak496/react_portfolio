@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = () =>{
     return(
         <div id="footer">
-           <h4>This webiste is built using </h4>
+           <h4>This website is built using </h4>
            <img src={reactIcon} width="20" height="20"/>
         </div>
     )
