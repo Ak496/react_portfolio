@@ -32,7 +32,7 @@
    text-shadow: #716f71;
 }
 
-#header-section #resume-button {
+#header-section #menu-resume-button {
     background-color: #5b2473;
     color: #c5a5c9;
     border-radius: 20px;
@@ -42,13 +42,13 @@
     margin-top: 7%;
 }
 
-#header-section #resume-button:hover {
+#header-section #menu-resume-button:hover {
     background-color: #6a3782;
     border: none;
     transition: 1s;
 }
 
-@media only screen and (min-width:1080px) and (max-width:1200px) {
+@media only screen and (min-width:1130px)  {
     #menu-container {
         display: none;
     }

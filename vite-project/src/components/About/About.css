@@ -65,7 +65,7 @@
     }    
 }
 
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:1130px) {
     #about h2 {
         margin-top: 10% ;
         visibility: visible; 
