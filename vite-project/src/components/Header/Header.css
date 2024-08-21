@@ -3,6 +3,7 @@
     height: 12%;
     background-color: hsla(306, 41%, 21%, 0.314);
     backdrop-filter: blur(100px);
+    box-shadow: 0 0 20px rgb(90, 40, 90);
     position: fixed;
     z-index: 1;
 }
@@ -26,11 +27,11 @@
     list-style-type: none;
     align-items: center;
     position: relative;
-    left: 37%
+    left: 30%;
 }
 
 #header-section #nav-link-list li {
-    width: 7.5rem;
+    width: 7rem;
 }
 
 #header-section #nav-link-list a {

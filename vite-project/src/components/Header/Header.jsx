@@ -17,7 +17,8 @@ const Header = () => {
                 {showDropDown && <DropdownMenuPage onClickHandler={showDropDownHandler} />}
                 <ul id="nav-link-list">
                     <li id="nav-link-home"><a href="#home">HOME</a></li>
-                    <li id="nav-link-about"><a href="#about">ABOUT ME</a></li>
+                    <li id="nav-link-about"><a href="#about">ABOUTME</a></li>
+                    <li id="nav-link-skills"><a href="#skill">SKILLS</a></li>
                     <li id="nav-link-contact"><a href="#contact">CONTACT</a></li>
                     <li><button id="resume-button">RESUME</button></li>
                 </ul>

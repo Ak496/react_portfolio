@@ -28,7 +28,7 @@ const About = () => {
                     </Fade>
                 </div>
                 <div id="about-profilePic-section">
-                    <img src={ProfilePic} width="350" height="400" alt='ProfilePicture' />
+                    <img src={ProfilePic} width="400" height="400" alt='ProfilePicture' />
                 </div>
             </div>
         </div>
