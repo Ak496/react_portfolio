@@ -1,7 +1,7 @@
 #about {
     display: flex;
     flex-direction: column;
-    margin: 0 5%;
+    margin: 0 6%;
 }
 
 #about h2 {
@@ -14,12 +14,12 @@
 
 #about-content {
     display: flex;
-    margin-top: 2%;
+    margin: 5% 0%;
 }
 
 #about-content #about-details-section {
     width: 50%;
-    height: 450px;
+    height: 400px;
 }
 
 #about-content #about-details-section h3 {
@@ -28,24 +28,14 @@
 
 #about-content #about-details-section p {
     color: #c5a5c9;
-    font-weight: 600;
-    line-height: 2rem;
-}
-
-#about-content #about-details-section #skill-img-container {
-    width: 25vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-#about-content #about-details-section img {
-    box-shadow: 0 0 10px rgb(161, 149, 161);
+    font-weight: 700;
+    line-height: 2.5rem;
 }
 
 #about-content #about-profilePic-section {
     width: 400;
     height: 400;
-    padding: 3% 12% ;
+    padding: 2% 12% 0%;
 }
 
 #about-content #about-profilePic-section img {
@@ -74,9 +64,5 @@
     }
     #about-content #about-profilePic-section {
         padding: 5% 10% 0%;
-    }
-    #about-content #about-details-section img {
-        max-width: 100%;
-        height: auto;
     }
 }
