@@ -127,13 +127,13 @@
 
     #contact-form #contact-form-inputs input {
         width: 75vw;
-        height: 8vh;
+        min-height: 8vh;
         font-size: 3vw;
     }
 
     #contact-form textarea {
         width: 75vw;
-        height: 20vh;
+        min-height: 20vh;
         font-size: 3vw;
     }
 }

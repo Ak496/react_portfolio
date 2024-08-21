@@ -15,14 +15,14 @@
 #skill #skill-img-container{
     display: flex;
     flex-direction: column;
-    height: 450px;
+    min-height: 450px;
     justify-content: space-between;
     padding: 3%;
 }
 #skill img {
     box-shadow: 0 0 10px rgb(161, 149, 161);
     width: 200px;
-    height: 200px;
+    min-height: 200px;
 }
 
 #skill-img-container .skill-set{

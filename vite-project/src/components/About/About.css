@@ -19,7 +19,7 @@
 
 #about-content #about-details-section {
     width: 50%;
-    height: 400px;
+    min-height: 400px;
 }
 
 #about-content #about-details-section h3 {
@@ -34,7 +34,7 @@
 
 #about-content #about-profilePic-section {
     width: 500;
-    height: 400;
+    min-height: 400;
     padding: 2% 12% 0%;
 }
 
