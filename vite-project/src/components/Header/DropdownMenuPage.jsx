@@ -1,13 +1,12 @@
 import "./DropdownMenuPage.css"
-import CloseIcon from "../../assets/CloseIcon.svg"
-const DropdownMenuPage = ({ onClickHandler }) => {
+const DropdownMenuPage = () => {
     return (
         <div id="menu-container">
-            <img src={CloseIcon} onClick={onClickHandler} />
             <ul id="menu-dropDown">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 <li><button id="menu-resume-button">RESUME</button></li>
             </ul>
         </div>

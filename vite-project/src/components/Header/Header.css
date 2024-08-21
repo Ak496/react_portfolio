@@ -8,85 +8,73 @@
     z-index: 1;
 }
 
-#header-container #header-section {
+#header-section {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    height: 100%;
 }
 
-#header-container #header-section #header-section-heading {
-    margin-left: 20px;
+#header-section-heading {
     color: #c5a5c9;
 }
-
-#header-container #header-section #menu-icon{
-    visibility: hidden;
+#menu-icon {
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    right: 20px; 
+    transform: translateY(-50%);
+    z-index: 2; 
 }
 
-#header-section #nav-link-list {
+#nav-link-list {
     display: flex;
     list-style-type: none;
     align-items: center;
-    position: relative;
-    left: 30%;
+    gap: 3.5rem; 
 }
 
-#header-section #nav-link-list li {
-    width: 7rem;
+#nav-link-list li {
+    width: auto; 
 }
 
-#header-section #nav-link-list a {
+#nav-link-list a {
     color: #c5a5c9;
     font-size: large;
     font-weight: bold;
+    text-decoration: none; 
 }
 
-
-#header-section #nav-link-list a:hover,
-#header-container #header-section #header-section-heading:hover {
+#nav-link-list a:hover,
+#header-section-heading:hover {
     text-shadow: 0 0 15px rgb(246, 246, 246);
 }
 
-#header-section #resume-button {
+#resume-button {
     background-color: #5b2473;
     color: #c5a5c9;
     border-radius: 20px;
-    width: 9rem;
+    padding: 0.5rem 1rem; 
     box-shadow: 0 0 20px rgb(111, 2, 111);
     font-weight: bolder;
     font-size: large;
     letter-spacing: 0.05cm;
+    border: none; 
 }
 
-#header-section #resume-button:hover {
+#resume-button:hover {
     background-color: #9157ac;
-    border: none;
-    transition: 1s;
+    transition: background-color 1s;
 }
 
 /* Media Queries */
-@media only screen and  (max-width:1130px) {
-    #header-container #header-section {
-        justify-content: space-between;
+@media only screen and (max-width: 960px) {
+    #menu-icon {
+        display: block;
     }
-    #header-container #header-section #menu-icon{
-        visibility: visible;
-        margin-right: 40px;
-    }
-    #header-section #nav-link-list {
-        display: none;
-    }
-}
 
-@media only screen and (min-width:1130px) and (max-width:1300px) {
-    #header-section #nav-link-list {
-        left: 30%
-    }
-    #header-section #nav-link-list a {
-        width: 4rem;
-    }
-    #header-section #resume-button {
-        width: 7rem;
-        font-weight: 700;
-        letter-spacing: 0cm
+    #nav-link-list {
+      display: none;
     }
 }
