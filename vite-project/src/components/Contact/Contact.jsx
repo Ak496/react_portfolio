@@ -13,6 +13,7 @@ const Contact = () => {
     });
     const [errors, setErrors] = useState({});
     const [showNotification, setShowNotification] = useState(false);
+    const [valid, setValid] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -21,6 +22,12 @@ const Contact = () => {
             [name]: value,
         });
         const newErrors = validateForm(formData)
+        if (Object.keys(newErrors).length === 0) {
+            setValid(true);
+        }
+        else {
+            setValid(false);
+        }
         setErrors(newErrors);
     };
 
@@ -103,7 +110,7 @@ const Contact = () => {
                             <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required></textarea>
                             {errors.message && <h4 id="error-display">{errors.message}</h4>}
                         </div>
-                        <button id="form-submit">SUBMIT</button>
+                        <button id="form-submit" disabled={!valid}>SUBMIT</button>
                     </form>
                 </div>
             </div>

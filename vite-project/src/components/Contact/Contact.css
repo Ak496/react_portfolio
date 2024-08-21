@@ -14,6 +14,7 @@
 
 #contact-sections {
     display: flex;
+    justify-content: space-evenly;
 }
 
 #contact-details-section {
@@ -101,11 +102,10 @@
     box-shadow: 0 0 20px rgb(111, 2, 111);
     letter-spacing: 0.05cm;
 }
-
-#contact-form #form-submit:hover {
-    background-color: #9157ac;
-    border: none;
-    transition: 1s;
+#contact-form #form-submit:disabled {
+    background-color: #4c4b4d;
+    color: black;
+    box-shadow: 0 0 20px rgb(5, 5, 5);
 }
 
 /* Media Queries */
