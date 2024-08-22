@@ -4,7 +4,7 @@ Project is created using Vite
 # Technologies used
 * HTML
 * CSS
-* ReactJS
+* React JS
 # To Run Project
 1. npm install
 2. npm run dev
