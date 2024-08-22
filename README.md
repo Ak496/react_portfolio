@@ -1,7 +1,7 @@
 # My Portfolio Website
-This project is personal portfolio website built using React. It showcases my projects, skills, and experience as a web developer. 
+This project is personal portfolio website built using React JS. It showcases my projects, skills, and experience as a web developer. 
 <img src="./vite-project/src/assets/MyPortfolio.png"/>
-Project is created using Vite
+Vite is used for creating this project
 # Technologies used
 * HTML
 * CSS
