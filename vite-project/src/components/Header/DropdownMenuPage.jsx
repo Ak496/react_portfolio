@@ -1,4 +1,5 @@
-import "./DropdownMenuPage.css"
+import "./DropdownMenuPage.css";
+import Resume from "../../assets/Resume.pdf";
 const DropdownMenuPage = () => {
     return (
         <div id="menu-container">
@@ -7,7 +8,9 @@ const DropdownMenuPage = () => {
                 <li><a href="#about">ABOUT ME</a></li>
                 <li><a href="#skill">SKILLS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><button id="menu-resume-button">RESUME</button></li>
+                <a href={Resume} download="Akila_Resume" target='_blank'>
+                    <li><button id="menu-resume-button">RESUME</button></li>
+                </a>
             </ul>
         </div>
     )

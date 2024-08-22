@@ -1,6 +1,7 @@
 import './Header.css';
 import Menu from "../../assets/Menu.svg";
 import Close from "../../assets/CloseIcon.svg";
+import Resume from "../../assets/Resume.pdf";
 import { useState } from 'react';
 import DropdownMenuPage from './DropdownMenuPage';
 
@@ -20,13 +21,17 @@ const Header = () => {
                     alt={isMenuOpen ? "Close" : "Menu"}
                     onClick={menuHandler}
                 />
-                {showDropDown && <DropdownMenuPage/>}
+                {showDropDown && <DropdownMenuPage />}
                 <ul id="nav-link-list">
                     <li id="nav-link-home"><a href="#home">HOME</a></li>
                     <li id="nav-link-about"><a href="#about">ABOUT ME</a></li>
                     <li id="nav-link-skills"><a href="#skill">SKILLS</a></li>
                     <li id="nav-link-contact"><a href="#contact">CONTACT</a></li>
-                    <li><button id="resume-button">RESUME</button></li>
+                    <li>
+                        <a href={Resume} download="Akila_Resume" target='_blank'>
+                            <button id="resume-button">RESUME</button>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
