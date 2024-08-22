@@ -11,20 +11,22 @@ const Skill = () => {
     return (
         <div id='skill'>
             <h2>SKILLS</h2>
-            <Fade duration={1000} direction='left'>
-                <div id="skill-img-container">
+            <div id="skill-img-container">
+                <Fade duration={1000} direction='left'>
                     <div className="skill-set">
                         <img src={HTML5} alt='HTML5Icon' />
                         <img src={CSS3} alt='CSS3Icon' />
                         <img src={Javascript} alt='JavascriptIcon' />
                     </div>
+                </Fade>
+                <Fade duration={1000} delay={500} direction='left'>
                     <div className="skill-set">
                         <img src={materialUI} alt='MaterialUIIcon' />
                         <img src={react} alt='ReactIcon' />
                         <img src={redux} alt='ReduxIcon' />
                     </div>
-                </div>
-            </Fade>
+                </Fade>
+            </div>
         </div>
     )
 }

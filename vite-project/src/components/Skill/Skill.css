@@ -29,9 +29,9 @@
     display: flex;
     justify-content: space-around;
 }
-/*Media Queries*/
 
-@media only screen and (max-width:1130px) {
+/*Media Queries*/
+@media only screen and (max-width:960px) {
     #skill h2 {
         margin-top: 10% ;
         visibility: visible; 
