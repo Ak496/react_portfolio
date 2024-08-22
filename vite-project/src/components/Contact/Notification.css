@@ -1,20 +1,23 @@
 .popup-content {
     width:400px;
-    height: 150px;
+    height: 130px;
     text-align: center;
-    background-color: #c5a5c9;
+    background-color: hsla(306, 41%, 21%, 0.9);
+    border: none;
+    box-shadow: 0 0 10px rgb(116, 10, 116);
 }
 
 .content p {
     font-size: large;
     font-weight: bolder;
+    color: #c5a5c9;
 }
 
 #popup-button {
-    width: 6rem;
-    background-color: #5b2473;
+    width: 4rem;
+    background-color: #702c8e;
     color: #c5a5c9;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
-    border-radius: 5%;
+    border-radius: 7%;
 }

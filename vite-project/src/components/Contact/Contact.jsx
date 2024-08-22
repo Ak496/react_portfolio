@@ -2,8 +2,10 @@ import phoneIcon from "../../assets/PhoneIcon.svg"
 import emailIcon from "../../assets/EmailIcon.svg"
 import locationIcon from "../../assets/LocationIcon.svg"
 import "./Contact.css"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Notification from "./Notification"
+import emailjs from '@emailjs/browser';
+import { SERVICE_ID, PUBLIC_KEY, TEMPLATE_ID } from '../../common.js'
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -13,7 +15,9 @@ const Contact = () => {
     });
     const [errors, setErrors] = useState({});
     const [showNotification, setShowNotification] = useState(false);
+    const [notificationMsg, setNotificationMsg] = useState("");
     const [valid, setValid] = useState(false);
+    const form = useRef();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -34,7 +38,7 @@ const Contact = () => {
     const validateForm = (data) => {
         const errors = {};
         if (data.username.length < 5) {
-            errors.username = "Name should be atleast of 5 characters";
+            errors.username = "Name should be atleast 5 characters";
         }
         if (data.username.length > 15) {
             errors.username = "Name should not be greater than 15 characters";
@@ -59,10 +63,20 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (Object.keys(errors).length === 0) {
-            setShowNotification(true);
-            console.log('Form submitted successfully!');
-        } else {
-            console.log('Form submission failed due to validation errors.');
+            emailjs
+                .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+                    publicKey: PUBLIC_KEY,
+                })
+                .then(
+                    () => {
+                        setNotificationMsg("Message sent successfully!");
+                        setShowNotification(true);
+                    },
+                    (error) => {
+                        setNotificationMsg("Network error occurred! Please Try later");
+                        setShowNotification(true);
+                    },
+                );
         }
     }
 
@@ -95,7 +109,7 @@ const Contact = () => {
                 </div>
                 <div id="contact-form-section">
                     <h3 id="contact-form-heading">Send Me Your Message</h3>
-                    <form id="contact-form" onSubmit={handleSubmit} noValidate>
+                    <form ref={form} id="contact-form" onSubmit={handleSubmit} noValidate>
                         <div id="contact-form-inputs">
                             <div id="name-input-container">
                                 <input type="text" name="username" value={formData.username} onChange={handleChange} placeholder="Name" required />
@@ -114,7 +128,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            {showNotification && <Notification onClose={notificationClosehandler} />}
+            {showNotification && <Notification onClose={notificationClosehandler} message={notificationMsg} />}
         </div>)
 }
 export default Contact;
