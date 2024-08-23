@@ -8,7 +8,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3% 7% 0%;
+    margin: 5% 7% 0%;
+    gap: 0.8rem;
 }
 #text-line1,
 #text-line2,
@@ -44,10 +45,6 @@
     background-color: #9157ac;
     border: none;
     transition: 1s;
-}
-
-#main-section-right {
-    margin-top: -30px;
 }
 
 /* Media Queries*/
