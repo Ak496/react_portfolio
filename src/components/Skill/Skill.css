@@ -15,14 +15,14 @@
 #skill #skill-img-container{
     display: flex;
     flex-direction: column;
-    min-height: 450px;
+    min-height: 350px;
     justify-content: space-between;
     padding: 3%;
 }
 #skill img {
     box-shadow: 0 0 10px rgb(161, 149, 161);
-    width: 200px;
-    min-height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 #skill-img-container .skill-set{
@@ -31,20 +31,21 @@
 }
 
 /*Media Queries*/
+
+@media only screen and (max-width:850px){
+    #skill #skill-img-container{
+        min-height: 250px ;
+    }
+    #skill img {
+        width: 90px;
+        height: 90px;
+    }
+}
 @media only screen and (max-width:960px) {
     #skill h2 {
         margin-top: 10% ;
         visibility: visible; 
         font-size: 5vw;
         align-self: center;
-    }
-}
-@media only screen and (max-width:1200px){
-    #skill #skill-img-container{
-        height: 35vh ;
-    }
-    #skill img {
-        width: 20vw;
-        height: 20vh;
     }
 }

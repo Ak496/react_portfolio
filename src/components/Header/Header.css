@@ -1,6 +1,5 @@
 #header-container {
     width: 100vw;
-    height: 12%;
     background-color: hsla(306, 41%, 21%, 0.314);
     backdrop-filter: blur(100px);
     box-shadow: 0 0 20px rgb(90, 40, 90);
@@ -41,8 +40,8 @@
 
 #nav-link-list a {
     color: #c5a5c9;
-    font-size: large;
-    font-weight: bold;
+    font-size: medium;
+    font-weight: 700;
     text-decoration: none; 
 }
 
@@ -58,8 +57,8 @@
     padding: 0.5rem 1rem; 
     box-shadow: 0 0 20px rgb(111, 2, 111);
     font-weight: bold;
-    font-size: large;
-    letter-spacing: 0.05cm;
+    font-size: medium;
+    letter-spacing: 0.03cm;
     border: none; 
 }
 

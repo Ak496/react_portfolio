@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div id="header-container">
             <nav id="header-section">
-                <h3 id="header-section-heading">AKILA ARUNASATESAN</h3>
+                <h4 id="header-section-heading">AKILA ARUNASATESAN</h4>
                 <img id="menu-icon"
                     src={isMenuOpen ? Close : Menu}
                     alt={isMenuOpen ? "Close" : "Menu"}

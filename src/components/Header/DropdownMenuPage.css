@@ -19,7 +19,7 @@
 
 #menu-dropDown a {
     color: #c5a5c9;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     text-decoration: none;
 }
@@ -32,7 +32,7 @@
     width: 100%;
     background-color: #5b2473;
     color: #c5a5c9;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     box-shadow: 0 0 20px rgb(111, 2, 111);
     margin-top: 1rem;

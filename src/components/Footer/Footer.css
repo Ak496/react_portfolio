@@ -4,11 +4,15 @@
     backdrop-filter: blur(100px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#footer h4 {
+#footer p{
     color: #c5a5c9;
-    text-transform: uppercase;
-    word-spacing: 0.2cm;
+    font-weight: 600;
+}
+
+#footer-content{
+    display: flex;
+    align-items: center;
 }
