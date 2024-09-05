@@ -1,5 +1,5 @@
 import "./DropdownMenuPage.css";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Akila_Resume.pdf";
 const DropdownMenuPage = () => {
     return (
         <div id="menu-container">

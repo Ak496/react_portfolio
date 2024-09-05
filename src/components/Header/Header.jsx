@@ -1,7 +1,7 @@
 import './Header.css';
 import Menu from "../../assets/Menu.svg";
 import Close from "../../assets/CloseIcon.svg";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Akila_Resume.pdf";
 import { useState } from 'react';
 import DropdownMenuPage from './DropdownMenuPage';
 
